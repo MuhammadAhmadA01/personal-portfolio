@@ -1,0 +1,30 @@
+.navbar-container {
+  background: #111111;
+  width: 100%;
+  max-width: 300px; /* Limit the width on larger screens */
+  height: auto;
+  padding: 20px;
+}
+
+.profile-image {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+/* Responsive styles using media queries */
+@media only screen and (max-width: 767px) {
+  .navbar-container {
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+
+  .profile-image {
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}

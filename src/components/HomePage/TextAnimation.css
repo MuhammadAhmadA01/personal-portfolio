@@ -1,0 +1,38 @@
+.text-animation {
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.text-animation h2 {
+  display: none;
+}
+.text-animation h4 {
+  display: inline-block;
+  margin: 200px;
+  position: fixed;
+  font-weight: lighter;
+  margin-left: 420px;
+}
+
+.text-animation .active {
+  display: inline-block;
+  margin: 250px;
+margin-top:250px;
+  position: fixed;
+}
+
+.text-animation::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/b1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(20%);
+  z-index: -1;
+  overflow-y: scroll;
+}
